@@ -233,6 +233,9 @@ form input, textarea{
     padding: 10px;
     border-radius: 5px;
 }
+form label{
+    margin: 5px 0px 5px;
+}
 #submit{
    margin-top: 10px;
    background-color: rgb(24, 97, 193);
@@ -252,6 +255,7 @@ form input, textarea{
     z-index: 10000;
     background-size: cover;
     background-position: center;
+    padding: 10px;
   }
   .popup-img{
     width: 100%;
@@ -261,15 +265,17 @@ form input, textarea{
   .popup-nav {
     padding: 20px;
     border-radius: 10px;
-    max-width: 40%;
     min-width: 50%;
-    height: 80%;
+    height: auto;
     overflow: auto;
     gap: 10px;
     animation: scale 1s forwards;
-    background-color: white;
+    background-color: burlywood;
     border: 15px;
     cursor: pointer;
+  }
+  .popup-nav::-webkit-scrollbar{
+    display: none;
   }
   @keyframes scale {
     0%{
@@ -417,6 +423,7 @@ form input, textarea{
     }
     .popup-nav{
         min-width: 90%;
-        height: 100%;
+        border: 2px solid black;
+        height: auto;
     }
 }
