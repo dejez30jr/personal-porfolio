@@ -39,14 +39,36 @@
                             <a class="nav-link active fs-5 fw-bold" id="nav_a" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-5 fw-bold" id="nav_a" aria-current="page" href="#project">Project</a>
+                            <a class="nav-link active fs-5 fw-bold" id="nav_a" aria-current="page"
+                                href="#project">Project</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active fs-5 fw-bold" id="nav_a" aria-current="page"
                                 href="#skils">Skils</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-5 fw-bold" id="nav_a" aria-current="page" href="#Pengalaman">Pengalaman</a>
+                            <a class="nav-link active fs-5 fw-bold" id="nav_a" aria-current="page"
+                                href="#Pengalaman">Pengalaman</a>
+                        </li>
+                        <li class="nav-item kontak">
+                            <a class="nav-link active fs-5 fw-bold" id="nav_a" aria-current="page"
+                                href="#Pengalaman">Contact</a>
+                            <div class="popup">
+                                <div class="popup-nav">
+                                    <span class="close">&times;</span>
+                                    <img src="https://thumbs.dreamstime.com/b/contact-me-word-wooden-cubes-written-188527637.jpg"
+                                        class="popup-img">
+                                    <form action="">
+                                        <label for="nama">Nama</label>
+                                        <input type="text">
+                                        <label for="Email">Email</label>
+                                        <input type="email">
+                                        <label for="massage">Pesan</label>
+                                        <textarea name="massage" id="" rows="5"></textarea>
+                                        <input type="button" value="Kirim" id="submit">
+                                    </form>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -62,7 +84,8 @@
                 sepenuh nya bantuan AI" dan ramah pengguna.</p>
             <br>
             <div class="btn-cv">
-                <a href="https://www.instagram.com/dz.frontdev/?utm_source=ig_web_button_share_sheet"><i class="ph ph-instagram-logo"></i></a>
+                <a href="https://www.instagram.com/dz.frontdev/?utm_source=ig_web_button_share_sheet"><i
+                        class="ph ph-instagram-logo"></i></a>
                 <a href="https://github.com/dejez30jr"><i class="ph ph-github-logo"></i></a>
                 <a href="https://whatsaap.com"><i class="ph ph-whatsapp-logo"></i></a>
             </div>
@@ -75,7 +98,58 @@
     <section id="project">
         <div class="judul-project">
             <h1>Project saya</h1>
-            <i class="ph ph-caret-right" id="icon-project"></i>
+            <div class="icon-project">
+                <i class="ph ph-caret-right" id="icon-project"></i>
+                <!--popup -->
+                <div class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <img src="aset/pepuskab.id.png" class="popup-img">
+                        <div class="title_popup">
+                            <h2>Perpuskab.id</h2>
+                            <p>web ini di buat dengan html css dan js tujuan dari web ini untuk memperkenal kan
+                                perpustakaan
+                                digital di sekolah
+                            </p>
+                        </div>
+                        <img src="aset/rpl.png" class="popup-img">
+                        <div class="title_popup">
+                            <h2>Web kelas</h2>
+                            <p>web ini di buat dengan html css dan js tujuan dari web ini untuk memperkenalkan teknologi
+                                informasi yang di buat oleh anak rpl geniozis
+                            </p>
+                        </div>
+                        <img src="aset/webguru.png" class="popup-img">
+                        <div class="title_popup">
+                            <h2>Web guru</h2>
+                            <p>web ini di buat dengan html css dan js ini adalah tugas akhir semester saya memmbuat website 
+                            portofolio untuk guru yang kami buatkan
+                            </p>
+                        </div>
+                        <img src="aset/lomba.png" class="popup-img">
+                        <div class="title_popup">
+                            <h2>Project olimpade tik</h2>
+                            <p>web ini di buat dengan html css dan js meskipun saya tidak memndapatkan juara disana 
+                            ini adalah pengalaman pertama saya mengikuti lomba web design ini 
+                            </p>
+                        </div>
+                        <img src="aset/webguru.png" class="popup-img">
+                        <div class="title_popup">
+                            <h2>Web guru</h2>
+                            <p>web ini di buat dengan html css dan js ini adalah tugas akhir semester saya memmbuat website 
+                            portofolio untuk guru yang kami buatkan
+                            </p>
+                        </div>
+                        <img src="aset/hm-company.png" class="popup-img">
+                        <div class="title_popup">
+                            <h2>HM company</h2>
+                            <p>web ini di buat dengan html css js dan framework bootstrap tujuan web ini di buat karena abang saya yang mempunyai company dia ingin membuat 
+                            company portofolio nya meskipun web ini suda tidak digunakan lagi oleh abang saya tetapi pengalaman membuat nya masih terasa
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="project d-flex gap-2">
             <div class="kartu_project bg_project1">
@@ -86,7 +160,7 @@
             </div>
             <div class="kartu_project bg_project2">
                 <div class="isi-kartu">
-                    <h1>Geneozis-web</h1>
+                    <h1>Geniozis-web</h1>
                     <p>Lihat selengkapnya</p>
                 </div>
             </div>
@@ -124,14 +198,18 @@
             <div class="isi-skils">
                 <p>ketika saya belajar saya terus belajar di bidang front-end dan bereksperimen dengan kerangka kerja
                     baru
-                    dan di sini Anda dapat melihat ringkasan keahlian saya di bidang front-end saya telah mempelajari html css js dan UI-designer
+                    dan di sini Anda dapat melihat ringkasan keahlian saya di bidang front-end saya telah mempelajari
+                    html css js dan UI-designer
                 </p>
             </div>
             <div class="all-skils">
                 <img src="https://pbs.twimg.com/media/Ee6Bp9EX0AILuMq.jpg" class="skils-img">
-                <img src="https://th.bing.com/th/id/OIP.IQ1MlelyJy5KnWxHtVt3QQAAAA?rs=1&pid=ImgDetMain" class="skils-img">
-                <img src="https://th.bing.com/th/id/OIP.LyD5PgdzAkHCniPzX2pkZQHaHa?rs=1&pid=ImgDetMain" class="skils-img">
-                <img src="https://img.freepik.com/premium-photo/white-background-with-web-design-circle_1085346-35766.jpg" class="skils-img">
+                <img src="https://th.bing.com/th/id/OIP.IQ1MlelyJy5KnWxHtVt3QQAAAA?rs=1&pid=ImgDetMain"
+                    class="skils-img">
+                <img src="https://th.bing.com/th/id/OIP.LyD5PgdzAkHCniPzX2pkZQHaHa?rs=1&pid=ImgDetMain"
+                    class="skils-img">
+                <img src="https://img.freepik.com/premium-photo/white-background-with-web-design-circle_1085346-35766.jpg"
+                    class="skils-img">
                 <img src="https://www.wizcase.com/wp-content/uploads/2022/02/en-bootstrap-logo.jpg" class="skils-img">
             </div>
         </div>
@@ -143,24 +221,26 @@
         </div>
         <div class="box_pengalaman d-flex">
             <div class="kartu-pengalaman">
-                <img src="https://edufund.co.id/blog/wp-content/uploads/2024/01/Blog-Ilustrasi-Partners-RevoU-scaled.webp" class="pengalaman-img">
+                <img src="https://edufund.co.id/blog/wp-content/uploads/2024/01/Blog-Ilustrasi-Partners-RevoU-scaled.webp"
+                    class="pengalaman-img">
                 <div class="isi-pengalaman">
-                <h3>mini-course RevoU</h3>
-                <p>Pengalaman pertama saya pas awal mula belajar coding</p>
+                    <h3>mini-course RevoU</h3>
+                    <p>Pengalaman pertama saya pas awal mula belajar coding</p>
                 </div>
             </div>
             <div class="kartu-pengalaman">
-                <img src="https://cdn.rri.co.id/berita/91/images/1702631073730-I/e43szy6n8d1qf69.jpeg" class="pengalaman-img">
+                <img src="https://cdn.rri.co.id/berita/91/images/1702631073730-I/e43szy6n8d1qf69.jpeg"
+                    class="pengalaman-img">
                 <div class="isi-pengalaman">
-                <h3>juara 1 mewarnai</h3>
-                <p>Pengalaman sewaktu saya di kelas 4 sd </p>
+                    <h3>juara 1 mewarnai</h3>
+                    <p>Pengalaman sewaktu saya di kelas 4 sd </p>
                 </div>
             </div>
             <div class="kartu-pengalaman">
                 <img src="aset/otn.jpg" class="pengalaman-img">
                 <div class="isi-pengalaman">
-                <h3>Lomba web design</h3>
-                <p>Pengalaman pertama sewaktu smk lomba olimpiade tik</p>
+                    <h3>Lomba web design</h3>
+                    <p>Pengalaman pertama sewaktu smk lomba olimpiade tik</p>
                 </div>
             </div>
         </div>
@@ -170,7 +250,7 @@
             <b>&copy; right dz30 2025</b>
         </div>
     </section>
-    
+
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
