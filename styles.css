@@ -139,6 +139,7 @@ section{
 .bg_project6{
     background-image: url(https://img.com);
 }
+/* skils */
 .judul-skils{
     text-align: center;
     padding: 10px;
@@ -178,7 +179,7 @@ section{
     width: 100px;
     height: 100px;
 }
-
+/* pengalaman */
 .judul-pengalaman{
     text-align: center;
 }
@@ -221,6 +222,91 @@ section{
 }
 .card{
     width: 300px;
+}
+/* popup kontak */
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form input, textarea{
+    padding: 10px;
+    border-radius: 5px;
+}
+#submit{
+   margin-top: 10px;
+   background-color: rgb(24, 97, 193);
+   color: white;
+}
+.popup {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    background-size: cover;
+    background-position: center;
+  }
+  .popup-img{
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+  }
+  .popup-nav {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 40%;
+    min-width: 50%;
+    height: 80%;
+    overflow: auto;
+    gap: 10px;
+    animation: scale 1s forwards;
+    background-color: white;
+    border: 15px;
+    cursor: pointer;
+  }
+  @keyframes scale {
+    0%{
+        transform: scale(0.3);
+    }
+  }
+  .popup-content {
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+    min-width: 50%;
+    overflow: auto;
+    animation: scales 1s forwards;
+    background-color: white;
+    border: 15px;
+    cursor: pointer;
+  }
+  @keyframes scales {
+    0%{
+        transform: scale(0.3);
+    }
+  }
+  .title_popup{
+    text-align: start;
+    padding: 10px;
+  }
+  .popup-content::-webkit-scrollbar{
+    display: none;
+  }
+  .bg-popup{
+    backdrop-filter: blur(30px);
+  }
+  .close{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    font-size: 40px;
 }
 
 .footer{
@@ -319,5 +405,18 @@ section{
     .kartu-pengalaman{
         min-width: 80%;
     }
-
+     /* popup kontak */
+     .close{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        font-size: 40px;
+     }
+    .popup{
+        background-color: white;
+    }
+    .popup-nav{
+        min-width: 90%;
+        height: 100%;
+    }
 }
