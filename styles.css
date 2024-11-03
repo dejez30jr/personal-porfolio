@@ -197,7 +197,7 @@ section{
     padding: 10px;
 }
 .kartu-pengalaman{
-    width: 300px;
+    width: 400px;
     border-radius: 10px;
     border: 2px solid rgb(221, 218, 218);
     overflow: hidden;
@@ -214,14 +214,41 @@ section{
     height: 200px;
 }
 
-.aktivitas{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+/* penghargaan */
+.judul-penghargaan{
+    text-align: center;
 }
-.card{
-    width: 300px;
+#penghargaan{
+    width: 100%;
+    font-family: "kanit", sans-serif;
+    padding: 5% 10px 10px;
+}
+.penghargaan{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.kartu-penghargaan{
+    width: 40%;
+    height: 300px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: white;
+}
+.kartu-penghargaan a{
+    text-decoration: none;
+    color: white;
+}
+.bg-Kpenghargaan1{
+    background-image: url(https://edufund.co.id/blog/wp-content/uploads/2024/01/Blog-Ilustrasi-Partners-RevoU-scaled.webp);
+}
+.bg-Kpenghargaan2{
+    background-image: url(https://cdn2.lnk.bi/profilepics/-1499450_20221222482.jpg);
+}
+.bg-Kpenghargaan3{
+    background-image: url(aset/otn.jpg);
 }
 /* popup kontak */
 form{
@@ -403,13 +430,39 @@ form label{
       padding: 5% 0px 5%;
     }
     .box_pengalaman{
-        padding: 0 5px 0px;
+        padding: 0 10px 0px;
         overflow: auto;
         width: 100%;
         justify-content: start;
     }
     .kartu-pengalaman{
         min-width: 80%;
+    }
+    
+    .judul-penghargaan{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px 0px;
+        align-items: center;
+    }
+    .judul-penghargaan i{
+        font-weight: 30px;
+        font-weight: bold;
+    }
+    #penghargaan{
+        width: 100%;
+        padding: 0px;
+    }
+    .penghargaan{
+        padding: 5px 5px 10px;
+        width: 100%;
+        overflow: auto;
+        gap: 10px;
+        justify-content: none;
+    }
+    .kartu-penghargaan{
+        min-width: 80%;
+        height: 220px;
     }
      /* popup kontak */
      .close{
