@@ -244,11 +244,6 @@ section{
     border-radius: 10px;
     border: 2px solid rgb(221, 218, 218);
     overflow: hidden;
-    transform: translateY(-10px);
-    transition: transform 0.3s;
-}
-.kartu-pengalaman.animate{
-    transform: translateY(-10px);
 }
 .isi-pengalaman{
     padding: 10px;
@@ -481,15 +476,16 @@ form button{
       padding: 5% 0px 5%;
     }
     .box_pengalaman{
-        padding: 0 10px 0px;
+        padding: 0px 10px 0px;
         overflow: auto;
+        display: flex;
+        align-items: center;
         width: 100%;
         justify-content: start;
     }
     .kartu-pengalaman{
         min-width: 80%;
     }
-    
     .judul-penghargaan{
         display: flex;
         justify-content: space-between;
