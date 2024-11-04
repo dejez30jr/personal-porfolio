@@ -488,6 +488,10 @@ form button{
     .kartu-pengalaman{
         min-width: 80%;
     }
+    .kartu-pengalaman:hover{
+       transform: none;
+       
+    }
     .judul-penghargaan{
         display: flex;
         justify-content: space-between;
