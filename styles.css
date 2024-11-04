@@ -4,7 +4,42 @@ html,body{
     margin: 0;
     box-sizing: border-box;
 }
+/* Mengubah cursor menjadi gambar bulat */
+body {
+   cursor: none;
+}
+/* Gaya untuk elemen bulat */
+.circle {
+    width: 50px; 
+    height: 50px;
+    background-image: url(https://cdn5.vectorstock.com/i/1000x1000/07/24/dz-logo-letter-monogram-with-triangle-shape-vector-30050724.jpg);
+    background-size: cover; 
+    border-radius: 50%; 
+    position: absolute; 
+    top: 50px; 
+    left: 50px; 
+    pointer-events: none;
+}
 /* nav & logo */
+.logo{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.judul-1 {
+    font-size: 2rem; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: 2px solid; 
+    width: fit-content; 
+    animation: blink 0.75s step-end infinite; 
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Menghilangkan border untuk efek kedip */
+    }
+}
 .logo a{
     font-size: 40px;
     color: white;
@@ -114,6 +149,9 @@ section{
     font-family: "Kanit", sans-serif;
     overflow: hidden;
 }
+.kartu_project:hover{
+    border: 2px solid red;
+}
 .isi-kartu{
     width: 100%;
     height: 100%;
@@ -178,6 +216,11 @@ section{
 .skils-img{
     width: 100px;
     height: 100px;
+    transition: 1s;
+    border-radius: 10px;
+}
+.skils-img:hover{
+    transform: translateY(-20px);
 }
 /* pengalaman */
 .judul-pengalaman{
@@ -201,9 +244,11 @@ section{
     border-radius: 10px;
     border: 2px solid rgb(221, 218, 218);
     overflow: hidden;
+    transform: translateY(-10px);
+    transition: transform 0.3s;
 }
-.kartu-pengalaman:hover{
-    background-color: rgb(197, 197, 197);
+.kartu-pengalaman.animate{
+    transform: translateY(-10px);
 }
 .isi-pengalaman{
     padding: 10px;
@@ -237,6 +282,9 @@ section{
     overflow: hidden;
     color: white;
 }
+.kartu-penghargaan:hover{
+    border: 3px solid red;
+}
 .kartu-penghargaan a{
     text-decoration: none;
     color: white;
@@ -263,10 +311,13 @@ form input, textarea{
 form label{
     margin: 5px 0px 5px;
 }
-#submit{
-   margin-top: 10px;
-   background-color: rgb(24, 97, 193);
-   color: white;
+form button{
+    background-color: rgb(19, 89, 169);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+
 }
 .popup {
     display: none;
@@ -351,11 +402,11 @@ form label{
 }
 @media(max-width:800px){
     /* head */
+    .circle{
+        display: none;
+    }
     .logo a{
         font-size: 30px;
-    }
-    nav{
-        background-color: black;
     }
     #nav_a{
         color: black;
@@ -370,7 +421,7 @@ form label{
         flex-wrap: wrap-reverse;
         align-items: start;
         gap: 5px;
-        border-radius: 0px 0px 0px 20px;
+        border-radius: 0px 0px 50px 0px;
         padding: 20% 10px 10px;
     }
     #none{
