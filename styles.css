@@ -14,6 +14,7 @@ body {
     background-size: cover; 
     border-radius: 50%; 
     position: absolute; 
+    z-index: 10000;
     top: 50px; 
     left: 50px; 
     pointer-events: none;
@@ -56,7 +57,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    background-image: url(aset/bintang.jpeg);
+    background-image: url(https://cdn.wallpapersafari.com/53/38/tiSKIN.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -64,16 +65,16 @@ nav ul li a{
     animation: containers 10s linear infinite;
     background-size: 100% 100%;
 }
-@keyframes containers {
+/* @keyframes containers {
     0%{
         background-image: url(https://images.pexels.com/photos/608034/pexels-photo-608034.png?cs=srgb&dl=pexels-608034.jpg&fm=jpg);
     }
     33%{
         background-image: url(https://i.pinimg.com/originals/52/2f/60/522f60afee9d86eabdb04885bcc9c0bd.jpg);
     }
-}
+} */
 .judul-card{
-    width: 40%;
+    width: 50%;
     padding: 10px;
     font-size: 20px;
     font-family: "Kanit", sans-serif;
@@ -102,12 +103,11 @@ nav ul li a{
 }
 .card-judul{
     width: 30%;
-    height: 50%;
+    height: 500px;
 }
 .card-judul img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 /* content body */
 .judul-project{
