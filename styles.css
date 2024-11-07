@@ -628,6 +628,12 @@ footer {
         color: black;
         background-color: transparent;
     }
+    .box_jurusan1:hover{
+        box-shadow: none;
+    }
+    .box_jurusan2:hover{
+        box-shadow: none;
+    }
     .img-jurusan2{
         top: 0;
         z-index: 2;
