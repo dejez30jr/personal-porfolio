@@ -576,14 +576,14 @@ form button{
         height: 220px;
     }
     
+    #jurusan{
+        overflow: hidden;
+    }
     .text-jurusan{
         padding: 10px;
     }
     .image-jurusan{
         width: 90%;
-    }
-    .image-jurusan img{
-
     }
     .box_jurusan1{
         flex-wrap: wrap-reverse;
@@ -592,7 +592,6 @@ form button{
     }
     .box_jurusan2{
         width: 100%;
-        overflow: hidden;
         padding-top: 30px;
         gap: 20px;
     }
