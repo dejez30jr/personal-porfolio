@@ -440,8 +440,9 @@ form button{
     left: 0;
 }
 .img-jurusan4{
+    z-index: 1;
     top: -40px;
-    left: 60px;
+    right: 60px;
 }
 
 .footer{
@@ -583,7 +584,7 @@ form button{
         padding: 10px;
     }
     .image-jurusan{
-        width: 90%;
+        width: 70%;
     }
     .box_jurusan1{
         flex-wrap: wrap-reverse;
@@ -605,7 +606,6 @@ form button{
         left: 60px;
         z-index: 1;
     }
-
      /* popup kontak */
      .close{
         width: 100%;
