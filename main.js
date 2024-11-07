@@ -1,4 +1,4 @@
-// Mendapatkan elemen bulat
+// elemen bulat
 const circle = document.querySelector('.circle');
 
 // Menambahkan event listener untuk mousemove
@@ -13,7 +13,7 @@ window.onscroll = function () {
     if (document.documentElement.scrollTop > 100) {
         nav.style.background = "rgba(0,0,0,0.5)"
     } else {
-        nav.style.backgroundColor = "none"
+        nav.style.backgroundColor = "transparent"
     }
 }
 
@@ -43,7 +43,7 @@ closeButtons.forEach(button => {
     });
 });
 
-// Mencegah shortcut keyboard tertentu (misalnya Ctrl+S, Ctrl+P, dll)
+// kunci klik kanan bray
 // Mencegah klik kanan di seluruh halaman
 document.addEventListener('contextmenu', function (event) {
     event.preventDefault(); // Mencegah menu konteks muncul
@@ -61,16 +61,14 @@ document.addEventListener('keydown', function (e) {
     if (e.ctrlKey && e.key === 'u') {
         e.preventDefault();
     }
-    // Tambahkan kombinasi shortcut lain yang ingin dicegah
 });
 
 const logoElement = document.querySelector('.judul-1');
-const text = "Hallo, nama saya Derris.h"; // Teks yang ingin ditampilkan
+const text = "Hallo, nama saya Derris.h";
 let index = 0;
 let isDeleting = false; // Menandakan apakah sedang menghapus
 let delay = 100; // Delay antara karakter
 
-// Menambahkan gaya CSS untuk mendukung responsivitas
 logoElement.style.whiteSpace = 'normal'; // Mengizinkan teks membungkus ke baris berikutnya
 logoElement.style.width = '100%'; // Mengatur lebar ke 100% agar sesuai dengan layar
 logoElement.style.maxWidth = '600px'; // Mengatur lebar maksimum jika diperlukan
@@ -78,7 +76,6 @@ logoElement.style.margin = '0 auto'; // Memusatkan elemen
 
 function type() {
     if (!isDeleting) {
-        // Mengetik karakter
         if (index < text.length) {
             logoElement.textContent += text.charAt(index);
             index++;
@@ -102,4 +99,5 @@ function type() {
     }
 }
 
-type(); // Memulai animasi ketik
+type();
+
