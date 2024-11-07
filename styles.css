@@ -45,6 +45,7 @@ body {
 }
 nav ul li a{
     color: white;
+    font-family: "kanit", sans-serif;
 }
 #nav_a{
  color: white;
@@ -104,6 +105,9 @@ nav ul li a{
 .card-judul{
     width: 30%;
     height: 500px;
+}
+.card-judul img:hover{
+    transform: scale(1.1);
 }
 .card-judul img{
     width: 100%;
@@ -390,7 +394,58 @@ form button{
     font-size: 40px;
 }
 
+/* edukasi */
+#jurusan{
+    width: 100%;
+    padding: 15% 10px 10px;
+    font-family: "kanit", sans-serif;
+}
+.box_jurusan1{
+    gap: 7rem;
+    flex-wrap: wrap;
+}
+.box_jurusan2{
+    gap: 7rem;
+    flex-wrap: wrap;
+}
+.text-jurusan{
+    font-size: 20px;
+    width: 700px;
+}
+.image-jurusan{
+    width: 250px;
+    position: relative;
+    height: 350px;
+}
+.image-jurusan img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgb(31, 31, 31);
+}
+.img-jurusan1{
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.img-jurusan2{
+    top: -40px;
+    left: 70px;
+    z-index: 2;
+}
+.img-jurusan3{
+    top: 0;
+    z-index: 2;
+    left: 0;
+}
+.img-jurusan4{
+    top: -40px;
+    left: 60px;
+}
+
 .footer{
+    margin-top: 30px;
     width: 100%;
     text-align: center;
     padding: 10px;
@@ -398,6 +453,9 @@ form button{
     color: white;
 }
 @media(max-width:800px){
+    body::-webkit-scrollbar{
+        display: none;
+    }
     /* head */
     .circle{
         display: none;
@@ -517,6 +575,38 @@ form button{
         min-width: 80%;
         height: 220px;
     }
+    
+    .text-jurusan{
+        padding: 10px;
+    }
+    .image-jurusan{
+        width: 90%;
+    }
+    .image-jurusan img{
+        width: 200px;
+    }
+    .box_jurusan1{
+        flex-wrap: wrap-reverse;
+        margin-top: 30%;
+        width: 100%;
+    }
+    .box_jurusan2{
+        width: 100%;
+        overflow: hidden;
+        padding-top: 30px;
+        gap: 20px;
+    }
+    .img-jurusan2{
+        top: 0;
+        z-index: 2;
+        left: 0;
+    }
+    .img-jurusan1{
+        top: -40px;
+        left: 60px;
+        z-index: 1;
+    }
+
      /* popup kontak */
      .close{
         width: 100%;
