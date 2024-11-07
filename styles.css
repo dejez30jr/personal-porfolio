@@ -63,17 +63,8 @@ nav ul li a{
     background-position: center;
     color: white;
     border-radius: 10px;
-    animation: containers 10s linear infinite;
     background-size: 100% 100%;
 }
-/* @keyframes containers {
-    0%{
-        background-image: url(https://images.pexels.com/photos/608034/pexels-photo-608034.png?cs=srgb&dl=pexels-608034.jpg&fm=jpg);
-    }
-    33%{
-        background-image: url(https://i.pinimg.com/originals/52/2f/60/522f60afee9d86eabdb04885bcc9c0bd.jpg);
-    }
-} */
 .judul-card{
     width: 50%;
     padding: 10px;
@@ -397,16 +388,24 @@ form button{
 /* edukasi */
 #jurusan{
     width: 100%;
-    padding: 15% 10px 10px;
+    padding: 10% 10px 10px;
     font-family: "kanit", sans-serif;
 }
-.box_jurusan1{
+.box_jurusan1, .box_jurusan2{
+    margin: auto;
+    align-items: center;
+    width: 90%;
+    color: white;
+    border-radius: 20px;
     gap: 7rem;
+    background-color: rgb(26, 24, 24);
     flex-wrap: wrap;
 }
-.box_jurusan2{
-    gap: 7rem;
-    flex-wrap: wrap;
+.box_jurusan1:hover{
+    box-shadow: 0 5px 10px black;
+}
+.box_jurusan2:hover{
+    box-shadow: 0 5px 10px black;
 }
 .text-jurusan{
     font-size: 20px;
@@ -445,13 +444,42 @@ form button{
     right: 60px;
 }
 
-.footer{
-    margin-top: 30px;
-    width: 100%;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: rgb(34, 32, 32);
     text-align: center;
-    padding: 10px;
-    background-color: black;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
     color: white;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
 @media(max-width:800px){
     body::-webkit-scrollbar{
@@ -590,11 +618,15 @@ form button{
         flex-wrap: wrap-reverse;
         margin-top: 30%;
         width: 100%;
+        color: black;
+        background-color: transparent;
     }
     .box_jurusan2{
         width: 100%;
         padding-top: 30px;
         gap: 20px;
+        color: black;
+        background-color: transparent;
     }
     .img-jurusan2{
         top: 0;
@@ -605,6 +637,10 @@ form button{
         top: -40px;
         left: 60px;
         z-index: 1;
+    }
+
+    footer{
+        margin-top: 30px;
     }
      /* popup kontak */
      .close{
