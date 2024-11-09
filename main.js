@@ -11,9 +11,11 @@ document.addEventListener('mousemove', (event) => {
 window.onscroll = function () {
     const nav = document.getElementById('nav');
     if (document.documentElement.scrollTop > 100) {
-        nav.style.background = "rgba(0,0,0,0.5)"
+        nav.style.background = "black"
+        nav.style.border= "2px solid white"
     } else {
         nav.style.backgroundColor = "transparent"
+        nav.style.border= "none"
     }
 }
 
