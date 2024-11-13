@@ -95,6 +95,15 @@ color: black;
 .judul-card h1{
     font-size: 50px;
 }
+#name{
+    position: absolute;
+    animation: name 3s forwards;
+}
+@keyframes name {
+    0%{
+        transform: translateY(-300px);
+    }
+}
 .btn-lanjut a{
   text-decoration: none;
   color: white;
@@ -197,7 +206,7 @@ section{
     object-fit: cover;
 }
 .bg_project3{
-    background-image: url(aset/webguru.png);
+    background-image: url(aset/guruweb.png);
 }
 .bg_project4{
     background-image: url(aset/lomba.png);
