@@ -10,12 +10,11 @@ document.addEventListener('mousemove', (event) => {
 
 window.onscroll = function () {
     const nav = document.getElementById('nav');
-    if (document.documentElement.scrollTop > 100) {
-        nav.style.background = "black"
-        nav.style.border= "2px solid white"
+    if (document.documentElement.scrollTop > 500) {
+        nav.style.backgroundImage= "url(https://cdn.wallpapersafari.com/53/38/tiSKIN.jpg)";
+        nav.style.backgroundSize= "cover";
     } else {
-        nav.style.backgroundColor = "transparent"
-        nav.style.border= "none"
+        nav.style.backgroundImage = "none"
     }
 }
 
@@ -64,42 +63,3 @@ document.addEventListener('keydown', function (e) {
         e.preventDefault();
     }
 });
-
-const logoElement = document.querySelector('.judul-1');
-const text = "Hallo, nama saya Derris.h";
-let index = 0;
-let isDeleting = false; // Menandakan apakah sedang menghapus
-let delay = 100; // Delay antara karakter
-
-logoElement.style.whiteSpace = 'normal'; // Mengizinkan teks membungkus ke baris berikutnya
-logoElement.style.width = '100%'; // Mengatur lebar ke 100% agar sesuai dengan layar
-logoElement.style.maxWidth = '600px'; // Mengatur lebar maksimum jika diperlukan
-logoElement.style.margin = '0 auto'; // Memusatkan elemen
-
-function type() {
-    if (!isDeleting) {
-        if (index < text.length) {
-            logoElement.textContent += text.charAt(index);
-            index++;
-            setTimeout(type, delay); // Delay antara karakter
-        } else {
-            // Setelah selesai mengetik, tunggu sebentar sebelum menghapus
-            isDeleting = true;
-            setTimeout(type, 1000); // Tunggu 1 detik sebelum menghapus
-        }
-    } else {
-        // Menghapus karakter
-        if (index > 0) {
-            logoElement.textContent = text.substring(0, index - 1);
-            index--;
-            setTimeout(type, delay); // Delay antara karakter
-        } else {
-            // Setelah selesai menghapus, mulai lagi
-            isDeleting = false;
-            setTimeout(type, 500); // Tunggu sebentar sebelum mulai mengetik lagi
-        }
-    }
-}
-
-type();
-
