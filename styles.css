@@ -555,6 +555,7 @@ footer {
         align-items: start;
         padding: 20% 10px 10px;
         border-radius: 0px 0px 0px 40px;
+        
     }
     #none{
         display: none;
@@ -565,6 +566,8 @@ footer {
     }
     .isi-containers{
         width: 100%;
+        background: none;
+        border: none;
         border-radius: 10px 10px 0px 40px;
     }
     .judul-card h1{
