@@ -34,6 +34,14 @@ project.forEach(card => {
     })
 })
 
+const kartu = document.querySelectorAll('.kartu_project');
+kartu.forEach(card => {
+    card.addEventListener('click', function () {
+     alert('maaf untuk melihat project silahkan hubungi saya di kontak saya')
+    })
+})
+
+
 
 const closeButtons = document.querySelectorAll('.close');
 closeButtons.forEach(button => {
