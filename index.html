@@ -19,7 +19,7 @@
 
 <body>
     <!-- ini nav bro -->
-    <nav class="navbar fixed-top m-2 rounded-5" id="nav">
+    <nav class="navbar fixed-top" id="nav">
         <div class="container-fluid">
             <div class="logo">
                 <img src="aset/dzlogo.png" width="60" height="60" style="border-radius: 50%;">
@@ -42,6 +42,28 @@
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-5">
                         <li class="nav-item">
                             <a class="nav-link active fs-5" id="nav_a" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item kontak">
+                            <a class="nav-link active fs-5" id="nav_a" aria-current="page" href="#about">about</a>
+                            <div class="popup">
+                                <div class="popup-nav">
+                                    <span class="close">&times;</span>
+                                    <section id="about">
+                                        <div class="about d-flex justify-content-center">
+                                       <div class="container-about">
+                                        <div class="about-images" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="">
+                                            <img src="aset/dzimg.png" alt="">
+                                        </div>
+                                        <div class="text-about">
+                                            <h1>About</h1>
+                                            <p>hay perkenalkan nama saya deris hanggoro saya siswa softwer engginer di smk nurul iman dan hoby saya mempelajari hal baru di web design dan di frontend, asal saya dari jakarta</p>
+                                            <p><b style="background-color: tomato; padding: 0px 3px 0px;">motto:</b> menjadi web design yang creatif dan inovatif tanpa sepenuh nya bantuan AI</p> 
+                                        </div>
+                                       </div>
+                                    </div>
+                                    </section>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active fs-5" id="nav_a" aria-current="page" href="#project">Project</a>
@@ -89,7 +111,7 @@
                 </h1>
                 <h1>I am a Web design at Nurul Iman Vocational School</h1>
                 <div class="btn-lanjut">
-                    <a href="#project">
+                    <a href="#about">
                         <b>View more</b>
                     </a>
                 </div>
@@ -106,6 +128,7 @@
             </div>
         </div>
     </div>
+
     <!-- content body nya bre -->
     <section id="project">
         <div class="judul-project">
@@ -227,7 +250,7 @@
     <section id="jurusan">
         <div class="box_jurusan1 d-flex justify-content-center gap-5 ">
             <div class="text-jurusan">
-                <h1>Web design</h1>
+                <h1><span>Web design</span></h1>
                 <p>ketika saya belajar web design ini saya awal nya belajar otodidak dari youtobe meskipun saya siswa
                     rpl tetapi saya tidak hanya mengandalkan ilmu dari sekolah saja dari luar pun juga, dan saya belajar soal
                     layout dan bagaimana membuat tampilan yang responsif di semua device dengan design yang menarik dan
@@ -257,7 +280,7 @@
                     class="img-jurusan4" alt="">
             </div>
             <div class="text-jurusan">
-                <h1>frontend</h1>
+                <h1><span>frontend</span></h1>
                 <p>ketika saya belajar frontend saya mempelajari tentang memahami struktur dasar halaman web, memahami
                     semantik html dan memahami css konsep dasar seperti box model dan flexbox dan grid dan untuk js nya
                     saya memahami manipulasi DOM dan dasar dasar variabel, fungsi dan tipe data</p>
