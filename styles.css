@@ -666,7 +666,7 @@ footer {
         flex-wrap: wrap;
         align-items: center;
         width: 100%;
-        justify-content: start;
+        justify-content: center;
     }
     .kartu-pengalaman{
         min-width: 80%;
