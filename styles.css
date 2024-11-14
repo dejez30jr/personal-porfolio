@@ -374,7 +374,6 @@ form button{
     z-index: 10000;
     background-size: cover;
     background-position: center;
-    padding: 10px;
   }
   .popup-img{
     width: 100%;
@@ -385,11 +384,11 @@ form button{
     padding: 20px;
     border-radius: 10px;
     min-width: 50%;
-    height: auto;
+    height: 100%;
     overflow: auto;
     gap: 10px;
     animation: scale 1s forwards;
-    background-color: burlywood;
+    background-color: rgb(229, 239, 245);
     border: 15px;
     cursor: pointer;
   }
@@ -447,8 +446,8 @@ form button{
     color: white;
     border-radius: 20px;
     gap: 7rem;
-  background-image: url(https://cdn.wallpapersafari.com/53/38/tiSKIN.jpg);
-  background-size: cover;
+    background-image: url(https://cdn.wallpapersafari.com/53/38/tiSKIN.jpg);
+    background-size: cover;
     transition: all 1s ease;
     flex-wrap: wrap;
 }
@@ -498,9 +497,41 @@ form button{
     right: 60px;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+#about{
+  display: flex;
+  padding: 9% 0px 5%;
+  justify-content: center;
+}
+.container-about{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+    background-image: url(https://cdn.wallpapersafari.com/53/38/tiSKIN.jpg);
+    align-items: center;
+    border-radius: 20px;
+}
+.about-images{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.about-images img{
+    width: 350px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 6px 10px black;
+    border: 2px solid white;
+    height: 400px;
+    margin-left: -20px;
+}
+
+.text-about{
+    font-size: 20px;
+    width: 50%;
+    color: white;
+    font-family: "kanit", sans-serif;
 }
 
 footer {
@@ -724,6 +755,31 @@ footer {
         z-index: 1;
     }
 
+    .container-about{
+        flex-wrap: wrap;
+        width: 100%;
+        background-image: none;
+        gap: 20px;
+        justify-content: center;
+    }
+    .about-images{
+        width: 90%;
+        align-items: center;
+        height: 300px;
+    }
+    .about-images img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-shadow: none;
+        z-index: none;
+        margin-left: 0px;
+    }
+    .text-about{
+        width: 90%;
+          color: black;
+    }
+
     footer{
         margin-top: 30px;
     }
@@ -735,11 +791,10 @@ footer {
         font-size: 40px;
      }
     .popup{
-        background-color: white;
+        background-color: rgb(229, 239, 245);
     }
     .popup-nav{
         min-width: 90%;
-        border: 2px solid black;
         height: auto;
     }
 }
