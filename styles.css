@@ -142,7 +142,7 @@ color: black;
 }
 .card-judul img{
     animation: slide 2s forwards;
-    width: 300px;
+    width: 350px;
     height: 400px;
     border: 2px solid white;
     position: absolute;
