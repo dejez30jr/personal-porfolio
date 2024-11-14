@@ -632,6 +632,7 @@ footer {
         padding: 0px 10px 0px;
         overflow: auto;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         width: 100%;
         justify-content: start;
@@ -681,6 +682,11 @@ footer {
     }
     .text-jurusan{
         padding: 10px;
+    }
+    .text-jurusan h1 span{
+        background-color: tomato;
+        color: white;
+        padding: 0px 3px 0px;
     }
     .image-jurusan{
         width: 70%;
