@@ -141,7 +141,7 @@ color: black;
     }
 }
 .card-judul img{
-    animation: slide 2s forwards;
+    animation: slide 1s forwards;
     width: 350px;
     height: 400px;
     border: 2px solid white;
