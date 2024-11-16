@@ -11,10 +11,9 @@ document.addEventListener('mousemove', (event) => {
 window.onscroll = function () {
     const nav = document.getElementById('nav');
     if (document.documentElement.scrollTop > 500) {
-        nav.style.backgroundImage= "url(https://cdn.wallpapersafari.com/53/38/tiSKIN.jpg)";
-        nav.style.backgroundSize= "cover";
+        nav.style.background= "rgba(0,0,0,0.5)";
     } else {
-        nav.style.backgroundImage = "none"
+        nav.style.background = "none"
     }
 }
 
