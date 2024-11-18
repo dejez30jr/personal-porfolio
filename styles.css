@@ -185,7 +185,6 @@ section{
     background-size: cover;
     background-position: center;
     height: 250px;
-    color: white;
     font-family: "Kanit", sans-serif;
     overflow: hidden;
 }
@@ -194,25 +193,26 @@ section{
 }
 .isi-kartu{
     width: 100%;
+    color: white;
     height: 100%;
     background-color: rgba(0,0,0,0.5);
     padding: 10px;
 }
 .bg_project1{
-    background-image: url(aset/pepuskab.id.png);
+    background-image: url(aset/3d3.png);
 }
 .bg_project2{
-    background-image: url(aset/rpl.png);
+    background-image: url(aset/3d1.png);
     object-fit: cover;
 }
 .bg_project3{
-    background-image: url(aset/guruweb.png);
+    background-image: url(aset/3d2.png);
 }
 .bg_project4{
     background-image: url(aset/lomba.png);
 }
 .bg_project5{
-    background-image: url(aset/hm-company.png);
+    background-image: url(aset/3d4.png);
 }
 .bg_project6{
     background-image: url(https://img.com);
