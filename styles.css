@@ -286,9 +286,17 @@ section{
     transition: 1s;
     padding: 10px;    
 }
-.kartu-pengalaman:hover{
-    transform: translateY(40px);
+.kartu-pengalaman {
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
 }
+
+.kartu-pengalaman:hover {
+    transform: rotateY(10deg) rotateX(10deg);
+}
+/* .kartu-pengalaman:hover{
+    transform: translateY(40px);
+} */
 .isi-pengalaman{
     padding: 10px;
 }
@@ -450,14 +458,6 @@ form button{
     background-size: cover;
     transition: all 1s ease;
     flex-wrap: wrap;
-}
-.box_jurusan1:hover{
-    box-shadow: 0 5px 10px black;
-    transform: rotate(10deg);
-}
-.box_jurusan2:hover{
-    box-shadow: 0 5px 10px black;
-    transform: rotate(-10deg);
 }
 .text-jurusan{
     font-size: 20px;
