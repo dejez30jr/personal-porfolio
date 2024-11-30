@@ -198,6 +198,9 @@ section{
     background-color: rgba(0,0,0,0.5);
     padding: 10px;
 }
+.kartu_project a{
+    text-decoration: none;
+}
 .bg_project1{
     background-image: url(aset/3d3.png);
 }
@@ -209,7 +212,7 @@ section{
     background-image: url(aset/3d2.png);
 }
 .bg_project4{
-    background-image: url(aset/lomba.png);
+    background-image: url(aset/3d5.png);
 }
 .bg_project5{
     background-image: url(aset/3d4.png);
