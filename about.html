@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saya</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=DynaPuff:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+    *,
+    html,body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "kanit", sans-serif;
+    }
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    left: 0;
+    z-index: 1000;
+    align-items: center;
+  }
+  nav h1{
+    font-size: 40px;
+  }
+  button{
+    padding: 10px 20px 10px;
+    background-color: rgb(31, 93, 227);
+    border: none;
+    border-radius: 10px;
+  }
+  button a{
+    text-decoration: none;
+    color: white;
+  }
+  body{
+    padding-top: 10%;
+  }
+  .container{
+    padding: 10px;
+  }
+  .about{
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    padding: 10px;
+  }
+  .isi-about{
+    height: 100%;
+    top: 100px;
+    position: sticky;
+    width: 50%;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+  .img1{
+    width: 100%;
+    height: 300px;
+   
+  }
+  .all-img{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .all-img img{
+    width: 300px;
+  }
+  @media (max-width: 600px){
+    nav h1{
+       font-size: 30px;
+    }
+    nav{
+        padding: 10px;
+    }
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .isi-about{
+        width: 100%;
+        top: 20px;
+        position: relative;
+    }
+    .all-img{
+        margin-top: 20px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .all-img img{
+        width: 40%;
+        object-fit: cover;
+    }
+  }
+</style>
+<body>
+    <nav>
+        <h1>About DZ30</h1>
+        <button>
+            <a href="index.html">
+                Kembali
+            </a>
+        </button>
+    </nav>
+    <div class="container">
+        <div class="about">
+            <div class="isi-about">
+                <img src="aset/dzimg.png" class="img1">
+                <h1>About</h1>
+                <p>hallo perkenalkan saya derris siswa smk nurul iman selain di bidang Softwere engginer saya juga aktif mengikuti eskul Militaryband (drumband) hanya eskul drumband saja yang saya fokuskan karena itu hal yang positif juga bagi saya untuk tampil di big event mendatang, anda dapat melihat foto random saya di Militaryband ini.</p>
+            </div>
+        <div class="all-img">
+            <img src="aset/about2.jpg" alt="">
+            <img src="aset/about3.jpg" alt="">
+            <img src="aset/about4.jpg" alt="">
+            <img src="aset/about5.jpg" alt="">
+            <img src="aset/about1.jpg" style="width: 95%;">
+        </div>
+        </div>
+    </div>
+</body>
+</html>
