@@ -68,7 +68,7 @@ color: black;
     justify-content: center;
     background-image: url(https://cdn.wallpapersafari.com/53/38/tiSKIN.jpg);
     align-items: center;
-    background-size: cover;
+    background-size: 100% 100%;
     background-attachment: fixed;
 }
 .isi-containers{
@@ -85,6 +85,10 @@ color: black;
     backdrop-filter: blur(4.4px);
     -webkit-backdrop-filter: blur(4.4px);
     border: 1px solid rgba(255, 255, 255, 0.91);
+    transition: 1s;
+}
+.isi-containers:hover{
+    transform: rotateY(10deg) rotateX(10deg);
 }
 .judul-card{
     width: 60%;
@@ -108,7 +112,7 @@ color: black;
   text-decoration: none;
   color: white;
   background-color: tomato;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
 }
 .btn-cv{
@@ -246,7 +250,8 @@ section{
     width: 100%;
 }
 .isi-skils{
-    width: 700px;
+    width: auto;
+    padding: 0px 20px 0px;
     font-size: 20px;
     text-align: center;
 }
@@ -263,7 +268,8 @@ section{
     border-radius: 10px;
 }
 .skils-img:hover{
-    transform: translateY(-20px);
+    transform: translateY(-20px) rotate(360deg);
+    border-radius: 50%;
 }
 /* pengalaman */
 .judul-pengalaman{
@@ -597,8 +603,9 @@ footer {
         flex-wrap: wrap-reverse;
         align-items: start;
         padding: 20% 10px 10px;
+        background-size: 100% 100%;
         border-radius: 0px 0px 0px 40px;
-        
+        animation: bgpp 5s linear infinite;
     }
     #none{
         display: none;
@@ -609,8 +616,9 @@ footer {
     }
     .isi-containers{
         width: 100%;
-        background: none;
+        background: transparent;
         border: none;
+        backdrop-filter: none;
         border-radius: 10px 10px 0px 40px;
     }
     .judul-card h1{
@@ -644,6 +652,7 @@ footer {
     }
     .isi-skils{
         width: 100%;
+        padding: 0px;
         text-align: start;
     }
     .all-skils{
